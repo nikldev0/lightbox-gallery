@@ -1,0 +1,40 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+  height: 100vh;
+}
+
+.grid img {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+
+#lightbox {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  transition: all 1.5s ease;
+}
+
+#lighbox img {
+  max-width: 90%;
+  max-height: 80%;
+  padding: 8px;
+  background-color: rosybrown;
+  border: 2px solid white;
+  background-color: beige;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
